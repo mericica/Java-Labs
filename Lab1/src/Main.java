@@ -19,7 +19,7 @@ public class Main {
         System.out.println("Rounded Problem1.Grades: " + Arrays.toString(n1.roundArray(grades)));
         System.out.println("Max rounded grade: " + n1.maxGrade(grades));
 
-        /*Problem 2 - reading array from keyboard
+        //Problem 2 - reading array from keyboard
         NumbersArray a1 = new NumbersArray();
         Scanner myArray = new Scanner(System.in);
 
@@ -35,7 +35,7 @@ public class Main {
         System.out.println("Min number is: " + a1.minNr(numbers));
         System.out.println("Max sum without min element: " + a1.maxSum(numbers));
         System.out.println("Min sum without max element: " + a1.minSum(numbers));
-*/
+
 
         //Problem3
         BigNumber b1 = new BigNumber();
