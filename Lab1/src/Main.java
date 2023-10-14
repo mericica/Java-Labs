@@ -19,18 +19,10 @@ public class Main {
         System.out.println("Rounded Problem1.Grades: " + Arrays.toString(n1.roundArray(grades)));
         System.out.println("Max rounded grade: " + n1.maxGrade(grades));
 
-        //Problem 2 - reading array from keyboard
+        //Problem 2
+        System.out.println("-----------------------\n");
         NumbersArray a1 = new NumbersArray();
-        Scanner myArray = new Scanner(System.in);
-
-        System.out.print("Enter the number of elements in the array: ");
-        int n = myArray.nextInt();
-
-        int[] numbers = new int[n];
-        for (int i = 0; i < n; i++) {
-            System.out.print("Element " + (i + 1) + ": ");
-            numbers[i] = myArray.nextInt();
-        }
+        int[] numbers = new int[]{10, 4, 24, 23, 5, 34};
         System.out.println("Max number is: " + a1.maxNr(numbers));
         System.out.println("Min number is: " + a1.minNr(numbers));
         System.out.println("Max sum without min element: " + a1.maxSum(numbers));
@@ -38,6 +30,7 @@ public class Main {
 
 
         //Problem3
+        System.out.println("-----------------------\n");
         BigNumber b1 = new BigNumber();
         int[] array1 = new int[]{4, 2, 2};
         int[] array2 = new int[]{5, 7, 9};
@@ -49,11 +42,12 @@ public class Main {
         System.out.println("Division: " + Arrays.toString(b1.div(array3 , digit)));
 
         //Problem4
+        System.out.println("-----------------------\n");
         int[] keyboards = new int[]{55, 30, 40, 12, 93, 22};
         int[] usbs = new int[]{10, 20, 43, 33, 25};
         ElectronicShop e1 = new ElectronicShop(keyboards, usbs);
 
-        int budget = 3;
+        int budget = 30;
         System.out.println("Cheapest Keyboard: " + e1.cheapestKeyboard());
         System.out.println("Most expensive accessory:" + e1.mostExpensive());
         System.out.println("Max usb based of budget: " + e1.buyMax( budget));

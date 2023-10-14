@@ -19,18 +19,34 @@ public class ElectronicShopTest {
 
     public void buyTest(){assert e1.buy(23) == 22;}
 
-    //wrong tests
-    public void buyTestWrong(){assert e1.buy(2) == -1;}
+    //unexpected tests
+    public void buyTestUnexpected(){assert e1.buy(2) == -1;}
 
-    public void buyMaxTestWrong(){assert e1.buyMax(1) == -1;}
+    public void buyMaxTestUnexpected(){assert e1.buyMax(1) == -1;}
 
     int[] emptyK = {};
     int[] emptyUSB = {};
     ElectronicShop e2 = new ElectronicShop(emptyK, emptyUSB);
 
-    public void mostExpensiveWrong(){assert e2.mostExpensive() == -1;}
+    public void mostExpensiveUnexpected(){assert e2.mostExpensive() == -1;}
 
-    public void cheapestKeyboardWrong(){assert e2.cheapestKeyboard() == -1;}
+    public void cheapestKeyboardUnexpected(){assert e2.cheapestKeyboard() == -1;}
+
+    //wrong tests - THESE WILL GIVE AN ASSERTION ERROR IF RUN;
+    public void cheapestKeyboardTestWrong(){
+        assert e1.cheapestKeyboard() == 9;
+    }
+
+    public void mostExpensiveTestWrong(){
+        assert e1.mostExpensive() == 3;
+    }
+
+    public void buyMaxTestWrong(){
+        assert e1.buyMax(45) == 22;
+    }
+
+    public void buyTestWrong(){assert e1.buy(23) == 12;}
+
 
 
 

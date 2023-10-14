@@ -2,6 +2,9 @@ package Problem1;
 
 public class Grades {
     public int[] notSufficiantGrades(int[] grades) {
+        if (grades.length == 0){
+            return new int[]{-1};
+        }
         int[] finaleNoten = new int[0];
 
         for (int i = 0; i < grades.length; i++) {
@@ -35,6 +38,9 @@ public class Grades {
     }
 
     public int average(int[] grades){
+        if (grades.length == 0){
+            return -1;
+        }
         int sum = 0;
         for(int i=0; i<grades.length; i++){
             sum += round(grades[i]);
@@ -43,6 +49,9 @@ public class Grades {
     }
 
     public int[] roundArray(int[] grades){
+        if (grades.length == 0){
+            return new int[]{-1};
+        }
         int[] finaleNoten = new int[0];
         for(int i=0; i<grades.length; i++){
             finaleNoten = addToArray(finaleNoten, round(grades[i]));
@@ -51,6 +60,9 @@ public class Grades {
     }
 
     public int maxGrade(int[] grades){
+        if (grades.length == 0){
+            return -1;
+        }
         int maxGrade = grades[0];
         for(int i=0; i<grades.length; i++){
             if(round(grades[i]) > maxGrade){

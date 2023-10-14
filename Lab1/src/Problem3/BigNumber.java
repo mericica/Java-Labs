@@ -4,6 +4,9 @@ import java.util.Arrays;
 
 public class BigNumber {
     public int[] sum(int[] array1, int[] array2){
+        if(array1.length == 0|| array2.length == 0){
+            return new int[]{-1};
+        }
         int carry = 0;
         int[] sumArray = new int[array1.length];
 
@@ -29,6 +32,9 @@ public class BigNumber {
     }
 
     public int[] diff(int[] array1, int[] array2){
+        if(array1.length == 0|| array2.length == 0){
+            return new int[]{-1};
+        }
         //checking if the first array is bigger than the second
         int number1 = 0;
         int number2 = 0;
@@ -66,6 +72,9 @@ public class BigNumber {
     }
 
     public int[] mul(int[] array, int digit){
+        if(array.length == 0){
+            return new int[]{-1};
+        }
         int[] mulArray = new int[array.length];
         int carry = 0;
         for(int i=array.length-1; i>=0; i--){
@@ -83,6 +92,9 @@ public class BigNumber {
     }
 
     public int[] div(int[] array, int digit){
+        if(array.length == 0){
+            return new int[]{-1};
+        }
         int remainder = 0;
         int[] divArray = new int[array.length];
         for(int i = 0; i<array.length; i++){

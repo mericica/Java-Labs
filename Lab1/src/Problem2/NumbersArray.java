@@ -2,6 +2,9 @@ package Problem2;
 
 public class NumbersArray {
     public int maxNr(int[] array){
+        if(array.length==0){
+            return -1;
+        }
         int max = array[0];
         for(int i=0; i<array.length; i++){
             if(array[i] > max){
@@ -12,6 +15,9 @@ public class NumbersArray {
     }
 
     public int minNr(int[] array){
+        if(array.length==0){
+            return -1;
+        }
         int min = array[0];
         for(int i=0; i<array.length; i++){
             if(array[i] < min){
@@ -33,6 +39,9 @@ public class NumbersArray {
     }
 
     public int maxSum(int[] array){
+        if(array.length==0){
+            return -1;
+        }
         int index = minIndex(array);
         int newIndex = 0;
         int[] newArray = new int[array.length - 1];
@@ -61,6 +70,9 @@ public class NumbersArray {
     }
 
     public int minSum(int[] array){
+        if(array.length==0){
+            return -1;
+        }
         int index = maxIndex(array);
         int newIndex = 0;
         int[] newArray = new int[array.length - 1];
