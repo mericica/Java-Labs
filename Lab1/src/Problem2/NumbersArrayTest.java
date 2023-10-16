@@ -36,21 +36,7 @@ public class NumbersArrayTest {
 
     }
 
-    //Wrong tests - THESE WILL GIVE AN ASSERTION ERROR IF RUN;
-    public void minAndMaxTestFalse(){
-        int[] array = new int[]{10, 5, 132, 45, 8};
-        //wrong test:
-        assert n1.maxNr(array) == 10;
-        assert n1.minNr(array) == 8;
-    }
 
-    public void minAndMaxSumFalse(){
-        int[] array = new int[]{1, 2, 3, 4};
-        //wrong test:
-        assert n1.minSum(array) == 16;
-        assert n1.maxSum(array) == 1;
-
-    }
 
 
 

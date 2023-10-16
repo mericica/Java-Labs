@@ -26,6 +26,7 @@ public class TestRunner {
         nrArrTest.minAndMaxSum();
         nrArrTest.minAndMaxTestUnexpected();
         nrArrTest.minAndMaxTestUnexpected();
+        nrArrTest.minAndMaxSumTestUnexpected();
 
         //Problem3 Test
         b1.sumTest();

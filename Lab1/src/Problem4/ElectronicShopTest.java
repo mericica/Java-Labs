@@ -33,22 +33,6 @@ public class ElectronicShopTest {
     public void cheapestKeyboardUnexpected(){assert e2.cheapestKeyboard() == -1;}
 
     //wrong tests - THESE WILL GIVE AN ASSERTION ERROR IF RUN;
-    public void cheapestKeyboardTestWrong(){
-        assert e1.cheapestKeyboard() == 9;
-    }
-
-    public void mostExpensiveTestWrong(){
-        assert e1.mostExpensive() == 3;
-    }
-
-    public void buyMaxTestWrong(){
-        assert e1.buyMax(45) == 22;
-    }
-
-    public void buyTestWrong(){assert e1.buy(23) == 12;}
-
-
-
-
+    
 
 }
